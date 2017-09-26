@@ -1,0 +1,14 @@
+use mongoose-test
+
+db.users.insert([{
+	firstName : 'rohit',
+	lastName : 'kumbhar',
+	emailId : 'rohit.kumbhar@gmail.com'
+},{
+	firstName : 'rahul',
+	lastName : 'kumbhar',
+	emailId : 'rahul.kumbhar@gmail.com'
+}]);
+
+db.users.find().pretty();
+
