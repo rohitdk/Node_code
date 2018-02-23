@@ -1,6 +1,5 @@
 var express = require('express');
-// Bootstrap express
-var app = express();
+var app = new app();
 
 var userController = require('./userController.js');
 
