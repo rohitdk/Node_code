@@ -37,21 +37,6 @@ app.post('/users',function (req, res) {
 
 });
 
-app.put('/users/:userId',function (req, res) {
-	var v = console.log(req);
-	userModel.update({_id : req.params.userId },
-		{ 
-		  firstName :req.body.firstName,
-		  lastName: req.body.lastName,
-		  emailId : req.body.emailId
-		},
-		function (err, data) {
-		res.send(data);
-		res.send(v);
-	});
-
-});
-
 app.delete('/users/:userId', function (req, res) {
 	userModel.remove({ _id : req.params.userId}, function (err, data) {
 		res.send(data);
