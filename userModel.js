@@ -1,6 +1,5 @@
 // Mongoose import
 var mongoose = require('mongoose');
-var config = require('./config.js');
 
 // Mongoose connection to MongoDB
 mongoose.connect(config.url,{useMongoClient: true},  function (error) {
